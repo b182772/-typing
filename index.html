@@ -6,12 +6,14 @@
 </head>
 <body>
 <form method="post">
-<input type="text" id="name"></p>
+<input type="text" id="name">
+<input type="number" id="number1" value="2">
+</p>
 </form>
 <script>
 function getRndStr(){
   var str = document.getElementById("name").value;
-  var len = 2;
+  var len = document.getElementById("number1").value;;
   var result = "";
   for(var i=0;i<len;i++){
     result += str.charAt(Math.floor(Math.random() * str.length));
@@ -23,6 +25,6 @@ function test(){
 }
 </script>
 <input type="button" value=" ボタン " onclick="test();" style="width:100px;margin:5px;">
-<div id="area1" class="result" style="position: absolute; left: 300px; top: 150px; font-size:100pt;"  </div>
+<div id="area1" class="result" style="position: absolute; left: 250px; top: 150px; font-size:100pt;"  </div>
 </body>
 </html>
